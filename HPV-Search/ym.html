@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPV数据展示</title>
+
+    <link rel="stylesheet" href="styles/style-ym.css">
+	<link rel="icon" href="./images/数据.png">
+
+</head>
+<body>
+	<div class="bgc">
+		<img src="images/bg3.png" alt="背景图片1" style="filter:blur(0px);height: 100%;width: 100%;opacity: 0.7;">
+	</div>
+	<div class="bgc1">
+		<img src="images/bg.jpg" alt="背景图片2" style="filter:blur(0px);height: 100%;width: 100%;">
+	</div>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="title">
+			<img src="images/病毒1.png" alt="" class="head-img" style="width: 130px;height: 130px;margin-top: 20px;margin-left: 20px;">
+			<h1 class="head-h1">HPV研究所</h1>  
+		</div>
+		<div class="nav">
+			<h2 class="head-h2" id="main">首页</h2>
+			<h2 class="head-h2" id="bingdu">病毒馆</h2>
+			<h2 class="head-h2" id="yimiao">疫苗馆</h2>
+			<h2 class="head-h2" id="daping" style="color: #D1B78A;">数据大屏</h2>
+			<h2 class="head-h2" id="zixun">相关资讯</h2>
+		</div>
+	</div>
+
+	<!-- 数据大屏区域 -->
+	<div class="date-mainbox">
+
+		<!-- 左边的图表们  -->
+		<div class="date-libox-l">
+
+			<div class="panel">
+				<h2>国家近年HPV感染情况与接种率</h2>
+				<div id="chart-l1"  class="charts",>
+					<!-- chart-1对应样式可覆盖charts
+					这里主要是分层的1柱形图和正常2柱形图 -->
+				</div>
+				<div class="panel-footer"></div>
+			</div>
+			
+
+			<div class="panel chart-l2">
+				<h2>不同年龄段HPV感染率与类型分布</h2>
+				<div id="chart-l2"  class="charts",>
+					<!-- chart-1对应样式可覆盖charts
+					这里主要是分层的1柱形图和正常2柱形图 -->
+				</div>
+				<div class="panel-footer"></div>
+			</div>
+
+
+
+
+
+		</div>
+
+		<!-- 中间的地图与数据 -->
+		<div class="date-libox-m">
+
+			<!-- map地图模块 -->
+			<div class="map">
+				<div class="map1"></div>
+				<div class="map2"></div>
+				<div class="map3"></div>
+
+				<div id="chart-map" class="chart-map">
+					地图模块
+				</div>
+
+			</div>
+
+			<!-- diqu模块 -->
+			<div class="panel panel-diqu">
+				<h2><span class="xx-diqu-text">xx地区</span>HPV感染类型与感染率</h2>
+
+				<div id="chart-3" class="diqu">
+
+				</div>
+				<div class="panel-footer"></div>
+			</div>
+			
+
+		</div>
+
+
+		<!-- 右边的图表们  -->
+		<div class="date-libox-r">
+
+			<div class="date-libox-r-t">
+				<div class="panel2">
+					<h2>各省感染率</h2>
+					<div id="chart-r1"  class="charts-r",>
+	
+					</div>
+					<div class="panel2-footer"></div>
+					
+				</div>
+				<div class="panel2 panel2-r">
+					<h2>各省接种率</h2>
+					<div id="chart-r2"  class="charts-r",>
+						
+					</div>
+					<div class="panel2-footer"></div>
+					
+				</div>
+
+			</div>
+
+
+			<div class="panel panel-xxdiqu">
+				<div class="xx-diqu-box">
+					<h2>地区各类型感染率跳转</h2>
+					
+					<a href="javascript:;">华北地区</a>
+					<a href="javascript:;">华中地区</a>
+					<a href="javascript:;">华东地区</a>
+					 
+					<a href="javascript:;">华南地区</a>
+					<a href="javascript:;">东北地区</a>
+					<a href="javascript:;">西北地区</a>
+					
+					<a href="javascript:;">西南地区</a>
+					<a href="javascript:;">北方地区</a>
+					<a href="javascript:;">南方地区</a>
+					
+				</div>
+				<div class="panel-footer"></div>
+			</div>
+			
+
+	</div>
+
+	<script src="js/echarts.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/china.js"></script>
+    <script src="js/index.js"></script>
+	<script>
+		document.getElementById("main").onclick = function(){
+			window.location.href = "../主页面/main.html"
+		}
+		document.getElementById("bingdu").onclick = function(){
+			window.location.href = "../页面1/index1.html"
+		}
+		document.getElementById("daping").onclick = function(){
+			window.location.href = ""
+		}
+		document.getElementById("yimiao").onclick = function(){
+			window.location.href = "../hpv2/hpv/index2.html"
+		}
+		document.getElementById("zixun").onclick = function(){
+			window.location.href = "../hpv2/hpv/index4.html"
+		}
+	</script>
+
+</body>
+</html>

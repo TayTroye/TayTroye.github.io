@@ -1,0 +1,477 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ———————————————————————————————————— RESET CSS —————　END ——————————————————————————————————————————— */
+
+/* body{
+	min-width: 1400px;
+	min-height: 600px;
+	background: url(../images/bg3.png)
+	no-repeat top center;
+	line-height: 1.15;
+} */
+.bgc{
+	position:absolute;
+	left: 0;
+	top: 0;
+	background-color: #3f3f3c;
+	height: 116vh;
+	width: 100%;
+	z-index: -10;
+
+	min-width: 1400px;
+	min-height: 825px;
+}
+.bgc1{
+	position:absolute;
+	left: 0;
+	top: 0;
+	height: 116vh;
+	width: 100%;
+	z-index: -10;
+	opacity: 0.2;
+	
+	min-width: 1400px;
+	min-height: 825px;
+}
+
+/* 头部 */
+.head{
+	display: flex; 
+	height: 130px;
+	width: 100%;
+}
+.head-h1{
+	margin-left: 10px;
+	margin-top: 30px ;
+	/* font-size: 55px; */
+	font-size: 3.45rem;
+	font-family: "华文行楷";
+	color: #850D0D;
+	text-shadow: 3px 3px 6px #ce8888;
+}
+.title{
+	width: 38%;
+	height: 80%;
+	display: inline-flex;
+	/* justify-content: space-around; */
+	align-items: center; 
+}
+.nav{
+	width: 62%;
+	height: 70%;
+	background-color: #BF5862;
+	border-radius: 0 0 0 1.25rem;
+
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.head-h2{
+	font-weight: 300;
+	color: #DDDCDF;
+	font-size: 35px;
+	/* font-size: 2.5rem; */
+	font-family: "华文行楷";
+	margin: 0%;
+}
+.head-img{
+	/* 旋转动效 */
+	animation: rotate0 20s linear infinite;
+}
+@keyframes rotate0{
+	form{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(-360deg);
+	}
+}
+a{
+	text-decoration: none;
+	color: #91bfdb;
+}
+/* ——————————头部————————end———————— */
+
+/* ————— —————— ——————— 数据大屏 —— —— Begin —————— —————— ———— */
+
+.date-mainbox{
+	/* height: 78vh; */
+	width:100%;
+	min-width: 1300px;
+	min-height: 500px;
+	/* background-color:rgb(247, 162, 162); */
+	/* 透明度 */
+	/* opacity:0.2; */
+	display: flex;
+}
+.date-libox-l{
+	margin-left: 20px;
+	margin-right: 10px;
+	flex:1.1;
+	/* background-color: rgb(170, 182, 159,0.2); */
+}
+.date-libox-m{
+	flex: 2;
+	/* background-color: rgb(168, 227, 231,0.2); */
+}
+.date-libox-r{
+	margin-right: 20px;
+	margin-left: 10px;
+	flex: 1.1;
+	/* background-color: rgb(208, 168, 231,0.2); */
+}
+
+/* ———————————date-mainbox布局 —————END———————— */
+
+/* 公共盒子模型 */
+.panel{
+	position: relative;
+	height: 16rem;
+	background: url(../images/line\(1\).png);
+	opacity: 1;
+	/* 给中间大盒子留的颜色 */
+	/* background-color: rgba(123, 80, 122, 0.2); */
+	/* 四周的小盒子颜色 */
+	background-color: rgb(140,58,86,0.1) ;
+	border: 1px solid rgb(172, 132, 179,0.3);
+	padding: 0 15px 10px;
+	margin-bottom: 15px;
+}
+.panel h2{
+	height: 1.5rem;
+	color: #DDDCDF;
+	line-height: 1.6rem;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+.charts{
+	height: 15rem;
+	width: 100%;
+	/* background-color: rgba(255, 255, 255, 0.103); */
+}
+.panel::before{
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 10px;
+	height: 12px;
+	border-top: 2px solid #FFD3CA;
+	border-left: 2px solid #FFD3CA;
+	content: "";
+}
+.panel::after{
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #FFD3CA;
+	border-right: 2px solid #FFD3CA;
+	content: "";
+}
+.panel-footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.panel-footer::before{
+	position: absolute;
+	top: -10px;
+	left: -2px;
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid #FFD3CA;
+	border-left: 2px solid #FFD3CA;
+	content: "";
+}
+.panel-footer::after{
+	position: absolute;
+	top: -10px;
+	right: -2px;
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid #FFD3CA;
+	border-right: 2px solid #FFD3CA;
+	content: "";
+}
+/* ————————————公共盒子模型 ———END————————— */
+
+/* 中间diqu模块 */
+
+.panel-diqu{
+	margin-top: 10px;
+	height: 9.2rem;
+	
+}
+.panel-diqu h2{
+	margin-top: 5px;
+}
+.xx-diqu-text{
+	color: #ffeaab;
+}
+.diqu{
+	/* background-color: rgb(140,58,86,0.1) ; */
+	padding: 1rem;
+	/* 1rem = 16px */
+	height: 6.60rem;
+	/* height: 5.6rem; */
+}
+
+/* 中间map地图模块 */
+.map{
+	position: relative;
+	height: 33rem;
+	background-color: rgb(140,58,86,0.1) ;
+	border: 1px solid rgb(172, 132, 179,0.2);
+}
+/* 球体背景 */
+.map1{
+	position: absolute;
+	height: 26.9rem;
+	width: 26.9rem;
+	/* 居中 */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: url(../images/map.png);
+	background-size: 100% 100%;
+	opacity: 0.1;
+}
+/* wang旋转的动效 */
+.map2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	width: 30.5rem;
+	height: 30.5rem;
+
+	background: url(../images/lbx.png);
+	background-size: 100% 100%;
+	opacity: 0.4;
+
+	/* 旋转动效1 */
+	animation: rotate1 15s linear infinite;
+	
+}
+
+@keyframes rotate1{
+	form{
+		transform: translate(-50%,-50%) rotate(0deg);
+	}
+	to{
+		transform: translate(-50%,-50%) rotate(360deg);
+	}
+}
+/* jiantou旋转的动效 */
+.map3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	width: 28.9rem;
+	height: 28.9rem;
+
+	background: url(../images/jt.png);
+	background-size: 100% 100%;
+	opacity: 0.6;
+
+	/* 旋转动效2 */
+	animation: rotate2 15s linear infinite;
+	
+}
+
+@keyframes rotate2{
+	form{
+		transform: translate(-50%,-50%) rotate(0deg);
+	}
+	to{
+		transform: translate(-50%,-50%) rotate(-360deg);
+	}
+}
+/* chart-map地图模块 */
+.chart-map{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 33rem;
+	/* background-color: #fff; */
+}
+
+
+/* chart-l2特殊样式 */
+.chart-l2{
+	height: 25.25rem;
+}
+#chart-l2{
+	height: 24.75rem;
+}
+
+/* chart-xxdiqu特殊样式 */
+.panel-xxdiqu{
+	height: 7.8rem;
+	margin-top: 10px;
+}
+.xx-diqu-box{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.xx-diqu-box h2{
+	height: 1.5rem;
+	width: 100%;
+	color: #DDDCDF;
+	line-height: 1.6rem;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+.xx-diqu-box a{
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	width: 80px;
+	/* 加上总体感染率的  太长了放不下 */
+	/* width: 130px; */
+	color:#ffeaab;
+	text-align: center;
+	margin: 5.5px;
+	background-color: rgb(230, 215, 215,0.2);
+	border-radius:5px;
+}
+.xx-diqu-box a:hover{
+	color: #BF5862;
+}
+
+
+/* 右边上面的感染率和接种率 */
+.date-libox-r-t{
+	display: flex;
+	flex-direction: row;
+	height: 34.5rem;
+}
+.panel2-r{
+	margin-left: 10px;
+}
+.panel2{
+	position: relative;
+	height: 34.5rem;
+	background: url(../images/line\(1\).png);
+	opacity: 1;
+	/* 给中间大盒子留的颜色 */
+	/* background-color: rgba(123, 80, 122, 0.2); */
+	/* 四周的小盒子颜色 */
+	background-color: rgb(140,58,86,0.1) ;
+	/* background-color: #fff; */
+	border: 1px solid rgb(172, 132, 179,0.3);
+	padding: 0 10px 0;
+	width: 100%;
+}
+.panel2 h2{
+	height: 1.5rem;
+	color: #DDDCDF;
+	line-height: 1.6rem;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.charts-r{
+	height: 32.5rem;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.103);
+}
+
+.panel2::before{
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 10px;
+	height: 12px;
+	border-top: 2px solid #FFD3CA;
+	border-left: 2px solid #FFD3CA;
+	content: "";
+}
+.panel2::after{
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #FFD3CA;
+	border-right: 2px solid #FFD3CA;
+	content: "";
+}
+.panel2-footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.panel2-footer::before{
+	position: absolute;
+	top: -10px;
+	left: -2px;
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid #FFD3CA;
+	border-left: 2px solid #FFD3CA;
+	content: "";
+}
+.panel2-footer::after{
+	position: absolute;
+	top: -10px;
+	right: -2px;
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid #FFD3CA;
+	border-right: 2px solid #FFD3CA;
+	content: "";
+}
