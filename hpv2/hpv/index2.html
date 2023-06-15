@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>疫苗馆</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="icon" href="../img/宠物疫苗.png">
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js">
+    </script>
+</head>
+<body>
+    <div class="bgc">
+        <div class="head">
+			<div class="title">
+				<img src="../img/病毒1.png" alt="" class="head-img" style="width: 130px;height: 130px;margin-top: 20px;margin-left: 20px;">
+				<h1 class="head-h1">HPV研究所</h1>  
+			</div>
+            <div class="nav">
+                <h2 class="head-h2" id="main">首页</h2>
+                <h2 class="head-h2" id="bingdu" >病毒馆</h2>
+                <h2 class="head-h2" id="yimiao" style="color: #D1B78A;">疫苗馆</h2>
+                <h2 class="head-h2" id="daping">数据大屏</h2>
+                <h2 class="head-h2" id="zixun">相关资讯</h2>
+            </div>
+		</div>
+        <div class="vaccine">
+            <div class="chinaTwo">
+                <div style="background-color: white;height: 70%;border-radius:20px;border-bottom-style: solid;
+                border-width: 1px;
+                border-color: #707070;position: relative;">
+                    <div class="ym-tips" id="tip2_c">
+                        <P>建议接种年龄：9-45</P>
+                        <p>预防HPV种类：16、18</p>
+                        <p>每针接种价格：329￥</p>
+                        <p>接种月份：0、1、6</p>
+                    </div>
+                    <img src="../img/打针 (1).png"  alt="" id="two_c" class="ym-tp">
+                </div>
+                <h3>国产二价</h3>
+            </div>
+            <div class="interTwo">
+                <div style="background-color: white;height: 70%;border-radius:20px;border-bottom-style: solid;
+                border-width: 1px;
+                border-color: #707070;position: relative;">
+                <div class="ym-tips" id="tip2_f">
+                    <P>建议接种年龄：9-45</P>
+                    <p>预防HPV种类：16、18</p>
+                    <p>每针接种价格：600￥</p>
+                    <p>接种月份:0、1、6</p>
+                </div>
+                <img src="../img/打针 (2).png" alt="" id="two_f" class="ym-tp"></div>
+                <h3>进口二价</h3>
+                <div class="tip" style="display: none;">
+                </div>
+            </div>
+            <div class="interFour">
+                <div style="background-color: white;height: 70%;border-radius:20px;border-bottom-style: solid;
+                border-width: 1px;
+                border-color: #707070;position: relative;" >
+                <div class="ym-tips" id="tip4">
+                    <P>建议接种年龄：20-45</P>
+                    <p>预防HPV种类：6、11、 16、18</p>
+                    <p>每针接种价格：800￥</p>
+                    <p>接种月份:0、2、6</p>
+                </div>
+                <img src="../img/打针.png" alt="" id="four" class="ym-tp"></div>
+                <h3>进口四价</h3>
+            </div>
+            <div class="interNine">
+                <div style="background-color: white;height: 70%;border-radius:20px;border-bottom-style: solid;
+                border-width: 1px;
+                border-color: #707070;position: relative;">
+                <div class="ym-tips" id="tip9" > 
+                    <P>建议接种年龄：16-26</P>
+                    <p>预防HPV种类：6、11、 16、18、31、33、45、52、58</p>
+                    <p>每针接种价格：1318￥</p>
+                    <p>接种月份：0、2、6</p>
+                
+                </div>
+                <img src="../img/打针 (3).png" alt="" id="nine" class="ym-tp"></div>
+                
+                <h3 >进口九价</h3>
+            </div>
+        </div>
+        <div class="data">
+            <div class="showData">
+                <div class="leftNav">
+                    <div class="kinds" id="kinds"><h4>预防种类与预防率</h4></div>
+                    <div class="price" id="price"><h4>价格与进口量对比</h4></div>
+                    <div class="react" id="react"><h4 style="margin-top: 25px;">不良反应</h4></div>
+                </div>
+                <div class="showecharts0"></div>
+                <div class="showecharts1" id="main1">
+                    <div id="vac2">
+                    </div>
+                    <div id="vac9">
+                        <div>九价疫苗</div>
+                    </div>
+                    <div id="vac4">
+                        <div>四价疫苗</div>
+                    </div>
+                </div>
+                <div class="showecharts2" id="main2"></div>
+                <div class="showecharts3" id="main3">
+                    <div class="usual">
+                        <img src="../img/头晕.png" style="width: 100px;height: 100px;margin-left: 40px;"alt="">
+                        <img src="../img/发热.png" style="width: 100px;height: 100px;" alt="">
+                        <img src="../img/呕吐.png" style="width: 100px;height: 100px;"alt=""> 
+                        <div style="text-align: center;">常见</div>
+                    </div>
+                    <div class="common">
+                        <img src="../img/headache.png" style="width: 200px;height: 200px;margin-left: 70px;" alt="">
+                        <div style="text-align: center;">十分常见</div>
+                    </div>
+                    <div class="accident">
+                        <img src="../img/鼻科-鼻出血.png" style="width: 100px;height: 100px;margin-left: 0px;"alt="">
+                        <img src="../img/皮肤过敏.png" style="width: 100px;height: 100px;" alt="">
+                        <img src="../img/头颈外科-甲状腺内肿块.png" style="width: 100px;height: 100px;"alt=""> 
+                        <div style="text-align: center;">偶见</div>
+                    </div>
+                </div>
+            </div>
+            <div class="compare">
+               <h5>数据对比</h5>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script text="text/javascript">
+    document.getElementById("main").onclick = function(){
+        window.location.href = "../../主页面/main.html";
+    }
+    document.getElementById("yimiao").onclick = function(){
+        window.location.href = "./index2.html"
+    }
+    document.getElementById("bingdu").onclick = function(){
+        window.location.href = "../../页面1/index1.html";
+    }
+    document.getElementById("daping").onclick = function(){
+        window.location.href = "../../HPV-Search/ym.html"
+    }
+    // 数据大屏链接
+    document.getElementById("zixun").onclick = function(){
+        window.location.href = "./index4.html"
+    }
+    </script>
+</html>
+
+<script src="index2.js">
+    
+</script>
+<script src="echarts.js">
+
+</script>
+
