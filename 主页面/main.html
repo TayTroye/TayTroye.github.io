@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main-scene</title>
+    <link rel="icon" href="./images/星星.png">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <div class="background">
+        <!-- 框框 -->
+        <div class="class" id="house1" onclick="click1">
+            <img src="./images/mark.png" alt="" class="jump_mark">
+            <p>病毒馆</p>
+            <img src="./images/house1.png" alt="" class="house">
+        </div>
+
+        <div class="class" id="house2" onclick="click2">
+            <img src="./images/mark.png" alt="" class="jump_mark">
+            <p>疫苗馆</p>
+            <img src="./images/house2.png" alt="" class="house">
+        </div>
+        
+        <div class="class" id="house3">
+            <img src="./images/mark.png" alt="" class="jump_mark" style="bottom: 110%;">
+            <p  style="writing-mode: tb-rl;top: 0%;right: 105%;height: 200px;">数据大屏</p>
+            <img src="./images/house3.png" alt="" class="house">
+        </div>
+
+        <div class="class" id="house4" onclick="click4">
+            <img src="./images/mark.png" alt="" class="jump_mark">
+            <p style="writing-mode: tb-rl;top: 5%;left: 88%;height: 200px;">相关资讯</p>
+            <img src="./images/house4.png" alt="" class="house">
+        </div>
+        <img src="./images/小车，轿车.png" alt="" class="car">
+        <div class="title">
+            HPV研究所
+        </div>
+    </div>
+   
+
+</body>
+
+<script text="text/javascript">
+    document.getElementById("house1").onclick = function(){
+        window.location.href = "../页面1/index1.html";
+    }
+    document.getElementById("house2").onclick = function(){
+        window.location.href = "../hpv2/hpv/index2.html"
+    }
+    document.getElementById("house3").onclick = function(){
+        window.location.href = "../HPV-Search/ym.html"
+    }
+    document.getElementById("house4").onclick = function(){
+        window.location.href = "../hpv2/hpv/index4.html"
+    }
+</script>
+</html>

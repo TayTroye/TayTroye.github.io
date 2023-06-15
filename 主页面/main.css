@@ -1,0 +1,105 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+p{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    bottom: 86%;
+    left: 17%;
+    font-family: '华文楷体','Lucida Calligraphy';
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    color: #9439aa;
+}
+.title{
+    color:#850D0D ;
+    position:absolute;
+    top:65%;
+    left: 73%;
+    font-family: '华文行楷';
+    font-size: 66px;
+	text-shadow: 5px 5px 10px #ce8888;
+}
+
+.background{
+    width: 100%;
+    height: 840px;
+    background-image: url(./images/bac.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.class{
+    position: relative;
+    width: 200px;
+}
+
+.jump_mark{
+    /* 跳动的地标 */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 40%;
+    bottom: 70%;
+    transform: translate(-50%, -50%);
+    animation-name: jump_mark;
+    animation-duration: 1.0s;
+    /* 设置秒数 */
+    animation-timing-function: linear;
+    /* 速度曲线 */
+    animation-iteration-count: infinite;
+    /* 播放次数 */
+    animation-direction: alternate;
+    /* 逆向播放 */
+    animation-play-state: running;
+/* 正在播放 */
+}
+
+@keyframes jump_mark {
+    0%{
+        bottom: 90%;
+    }
+    100%{
+        bottom: 85%;
+    }
+}
+
+.house{
+    /* 房子，实现跳转 */
+    width: 90%;
+}
+/* 房子位置 */
+#house1{
+    position: relative;
+    top: 40%;
+    left: 15%;
+}
+
+#house2{
+    position: relative;
+    bottom: 4%;
+    left: 30%;
+}
+
+#house3{
+    position: relative;
+    top: 0%;
+    left: 50%;
+}
+
+#house4{
+    position: relative;
+    bottom: 37%;
+    left: 66%;
+}
+
+.car{
+    width: 100px;
+    height: 60px;
+    position: relative;
+    bottom: 15%;
+    left: 92%;
+}
