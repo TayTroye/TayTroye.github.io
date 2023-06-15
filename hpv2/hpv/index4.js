@@ -18,11 +18,14 @@ ball1.addEventListener("click",function(){
     freevac.style.display="block";
 });
 
-plane.addEventListener("click",function(){
+ball2.addEventListener("click",function(){
     compare.style.display="block";
     ball2.style.display="none";
     closeall.style.display="block";
 })
+plane.addEventListener("click",function(){
+  window.location.href="../../HPV-daozhen/hpv-daozhen.html?#";
+});
 
 close.addEventListener("click",function(){
   closeall.style.display="none";
@@ -103,6 +106,10 @@ option = {
  //compare
  var compare1=echarts.init(document.getElementById('compare'));
  option1 = {
+  tooltip:{
+    show:true,
+    trigger:'item',
+  },
     title:{
         text:'在中华大地上，我们每小时就有7人死于宫颈癌。',
         textAlign:'left',
