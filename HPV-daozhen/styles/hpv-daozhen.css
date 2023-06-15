@@ -1,0 +1,234 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.bgc{
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    background-color:#F9F3F6;
+}
+/* 头部 */
+.head{
+	display: flex; 
+	height: 130px;
+	width: 100%;
+}
+.head-h1{
+	margin-left: 10px;
+	margin-top: 30px ;
+	/* font-size: 55px; */
+	font-size: 3.45rem;
+	font-family: "华文行楷";
+	color: #850D0D;
+	text-shadow: 3px 3px 6px #ce8888;
+}
+.title{
+	width: 38%;
+	height: 80%;
+	display: inline-flex;
+	/* justify-content: space-around; */
+	align-items: center; 
+}
+.nav{
+	width: 62%;
+	height: 70%;
+	background-color: #BF5862;
+	border-radius: 0 0 0 1.25rem;
+
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.head-h2{
+	font-weight: 300;
+	color: #DDDCDF;
+	font-size: 35px;
+	/* font-size: 2.5rem; */
+	font-family: "华文行楷";
+	margin: 0%;
+}
+.head-img{
+	/* 旋转动效 */
+	animation: rotate0 20s linear infinite;
+}
+@keyframes rotate0{
+	form{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(-360deg);
+	}
+}
+a{
+	text-decoration: none;
+	color: #91bfdb;
+}
+/* ——————————头部————————end———————— */
+
+.daozhen-main{
+    /* background-color: #fff; */
+    position: relative;
+    left: 80px;
+    width: 91%;
+    height: 78%;
+}
+.daozhen-bg{
+    position: absolute;
+    height: 86%;
+    top: 82px;
+    left: 300px;
+}
+.daozhen-left{
+    position: absolute;
+    height: 100%;
+    left: 0;
+}
+.yuemiao{
+    position: absolute;
+    left: 154px;
+    top: 278px;
+    width: 82px;
+    height: 82px;
+    border-radius: 10px;
+}
+.zhimiao{
+    position: absolute;
+    left: 154px;
+    top: 417px;
+    width: 82px;
+    height: 82px;
+    border-radius: 10px;
+}
+.daozhen-right{
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+.daozhen-right img{
+    position: relative;
+    height: 100%;
+}
+.hua-l{
+    position: absolute;
+    height: 28%;
+    top: 30px;
+    left: 350px;
+}
+.hua-r{
+    position: absolute;
+    height: 43%;
+    top: -20px;
+    left: 620px;
+}
+/* 右边的展示样式和功能 */
+.yiyuan-wrap{
+    position: relative;
+    top: -510px;
+    left: 34px;
+    width: 390px;
+    height: 490px;
+    /* background-color: rgba(188, 125, 125, 0.125); */
+}
+.yiyuan-search-text{
+    position: absolute;
+    font-family: "幼圆";
+    color:rgb(88, 88, 88);
+    font-weight: 600;
+    font-size: 15px;
+    top: 13px;
+    left: 0px;
+}
+
+/*——————————————————右边盒子—————搜索框的———————↓———————————————*/
+/* 设置搜索图标 */
+.search-button img{
+    background-color:rgb(85, 152, 228);
+    border-radius: 0.1875rem;
+}
+/*设置搜索框的容器*/
+.search-wrap{
+    width: 13.825rem;
+    height: 1.875rem;
+    border-radius: 0.25rem;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0rem 0rem 0.5rem rgb(255, 255, 255);
+    position: absolute;
+    top: 8px;
+    left: 168px;
+}
+/* 设置输入框样式 */
+.search-wrap .search-input{
+    padding: 0 0.625rem;
+    border: none;
+    height: 1.875rem;
+    width: 10.75rem;
+    position: absolute;
+    left: 0rem;
+    background-color:rgb(251, 253, 255);
+    color:rgb(88, 88, 88);
+    outline: none;
+    border-radius: 0.25rem;
+}
+/* 设置按钮样式 */
+.search-wrap .search-button{
+    padding: 0;
+    border: none;
+    height: 1.875rem;
+    width: 1.875rem;
+    position: absolute;
+    left: 12rem;
+    outline: none;
+    border-radius: 0.25rem;
+    background-color:rgb(0, 0, 0);
+}
+/* 设置搜索按钮悬停样式 */
+.search-button img:hover{
+    background-color:rgb(25, 118, 223);
+    cursor: pointer;
+}
+/* 设置input获取焦点后的样式 */
+.search-input:focus{
+    background-color:rgb(236, 244, 238);
+    color: rgb(0, 0, 0);
+}
+/*——————————————————右边盒子—————搜索框的———————↑———————————————*/
+
+
+.yiyuan-show-wrap{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 390px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.yiyuan-show{
+    /* position: absolute;
+    top: 5px;
+    left: 5px; */
+    margin-top: 7px;
+    margin-left: 5px;
+    width: 380px;
+    height: 96px;
+    background-color: #ECECFA;
+    border-radius: 10px;
+}
+.yiyuan-show h1{
+    font-family: "华文行楷";
+    color: #850D0D;
+    font-size:26px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.yiyuan-show p{
+    font-family: "楷体";
+    color: #850D0D;
+    margin-left: 12px;
+    margin-top: 5px;
+    font-size: 18px;
+}

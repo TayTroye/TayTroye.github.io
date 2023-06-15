@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPV导诊</title>
+    <link rel="stylesheet" href="styles/hpv-daozhen.css">
+    
+</head>
+<body>
+    <div class="bgc">
+        <!-- 头部 -->
+        <div class="head">
+            <div class="title">
+                <img src="images/病毒1.png" alt="" class="head-img" style="width: 130px;height: 130px;margin-top: 20px;margin-left: 20px;">
+                <h1 class="head-h1">HPV研究所</h1>  
+            </div>
+            <div class="nav">
+                <h2 class="head-h2" id="main">首页</h2>
+                <h2 class="head-h2" id="bingdu">病毒馆</h2>
+                <h2 class="head-h2" id="yimiao">疫苗馆</h2>
+                <h2 class="head-h2" id="daping">数据大屏</h2>
+                <h2 class="head-h2" id="zixun" style="color:#D1B78A ;" >相关资讯</h2>
+            </div>
+        </div>
+
+        <div class="daozhen-main">
+            <div class="daozhen-bg">
+                <img src="images/医生.png" style="height: 100%;" alt="">
+            </div>
+
+            <div class="daozhen-left">
+                <img src="images/左边.svg" style="height: 100%;" alt="">
+            </div>
+            <div class="yuemiao">
+                <a href="https://www.laiyuemiao.com/" target="_blank">
+                <img src="images/yuemiao.jpg" style="height: 100%;border-radius: 10px;" alt="">
+                </a>
+            </div>
+            <div class="zhimiao">
+                <a href="https://weibo.com/u/6118611184?tabtype=album" target="_blank">
+                    <img src="images/zhimiaoyiyue.png" style="height: 100%;border-radius: 10px;" alt="">
+                </a>
+            </div>
+
+            <div class="daozhen-right">
+                <img src="images/右边.png" alt="">
+
+                <!-- 整个搜索与展示功能的位置 -->
+                <div class="yiyuan-wrap">
+                    <p class="yiyuan-search-text">根据省份搜索推荐医院：</p>
+                    <!-- 这里是搜索框 -->
+                    <div class="yiyuan-search-wrap">
+                        <form  class="search-wrap" action="#">
+                            <input class="search-input" type="text" placeholder="请输入具体省份"  onchange="search(this.value) " id="search-text">
+                            <!-- <input type="text" style="display: none;"> -->
+                            <button class="search-button">
+                                <img src="./images/搜索.png" alt="" width=100% height=100%>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- 这里是推荐医院的展示 -->
+                    <div class="yiyuan-show-wrap">
+                        <div class="yiyuan-show">
+                            <H1 class="yiyuan-name">医院名称</H1>
+                            <p><span class="yiyuan-suozaidi">推荐医院所在地</span>&nbsp;&nbsp;
+                                <span class="yiyuan-jibie">医院级别</span>&nbsp;&nbsp;
+                                <span class="yiyuan-leixing">医院类型</span></p>
+                            <p><span class="yiyuan-dianhua-qianzhui">咨询电话：</span><span class="yiyuan-dianhua">xxxxxxxx</span></p>
+                        </div>
+                        <div class="yiyuan-show">
+                            <H1 class="yiyuan-name">医院名称</H1>
+                            <p><span class="yiyuan-suozaidi">推荐医院所在地</span>&nbsp;&nbsp;
+                                <span class="yiyuan-jibie">医院级别</span>&nbsp;&nbsp;
+                                <span class="yiyuan-leixing">医院类型</span></p>
+                            <p><span class="yiyuan-dianhua-qianzhui">咨询电话：</span><span class="yiyuan-dianhua">xxxxxxxx</span></p>
+                        </div>
+                        <div class="yiyuan-show">
+                            <H1 class="yiyuan-name">医院名称</H1>
+                            <p><span class="yiyuan-suozaidi">推荐医院所在地</span>&nbsp;&nbsp;
+                                <span class="yiyuan-jibie">医院级别</span>&nbsp;&nbsp;
+                                <span class="yiyuan-leixing">医院类型</span></p>
+                            <p><span class="yiyuan-dianhua-qianzhui">咨询电话：</span><span class="yiyuan-dianhua">xxxxxxxx</span></p>
+                        </div>
+                        <div class="yiyuan-show">
+                            <H1 class="yiyuan-name">医院名称</H1>
+                            <p><span class="yiyuan-suozaidi">推荐医院所在地</span>&nbsp;&nbsp;
+                                <span class="yiyuan-jibie">医院级别</span>&nbsp;&nbsp;
+                                <span class="yiyuan-leixing">医院类型</span></p>
+                            <p><span class="yiyuan-dianhua-qianzhui">咨询电话：</span><span class="yiyuan-dianhua">xxxxxxxx</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="hua-l">
+                <img src="images/话-左边.png" style="height: 100%;" alt="">
+            </div>
+            <div class="hua-r">
+                <img src="images/话-右边.png" style="height: 100%;" alt="">
+            </div>
+
+        </div>
+    </div>
+    <script text="text/javascript">
+        document.getElementById("main").onclick = function(){
+            window.location.href = "../主页面/main.html";
+        }
+        document.getElementById("yimiao").onclick = function(){
+            window.location.href = "../hpv2/hpv/index2.html"
+        }
+        document.getElementById("bingdu").onclick = function(){
+            window.location.href = "../页面1/index1.html";
+        }
+        document.getElementById("daping").onclick = function(){
+            window.location.href = "../HPV-Search/ym.html"
+        }
+        // 数据大屏链接
+        document.getElementById("zixun").onclick = function(){
+            window.location.href = "../hpv2/hpv/index4.html"
+        }
+        </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/hpv-daozhen.js"></script>
+    
+</body>
+</html>
